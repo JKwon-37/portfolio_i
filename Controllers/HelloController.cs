@@ -5,6 +5,16 @@ public class HelloController : Controller
     [HttpGet("")]
     public string Index() 
     {
-        return "Hello World! From the HelloController!";
+        return "This is my index!";
+    }
+    [HttpGet("/projects")]
+    public string Projects() 
+    {
+        return "This are my projects!";
+    }
+    [HttpGet("/contact")]
+    public string Contact() 
+    {
+        return "This is my Contacts page!";
     }
 }
